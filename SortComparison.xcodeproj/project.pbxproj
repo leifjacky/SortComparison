@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		290DE0A51D87819800FC668E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DE0A41D87819800FC668E /* AppDelegate.swift */; };
 		290DE0A71D87819800FC668E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DE0A61D87819800FC668E /* ViewController.swift */; };
-		290DE0A91D87819800FC668E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290DE0A81D87819800FC668E /* Assets.xcassets */; };
 		290DE0AC1D87819800FC668E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290DE0AA1D87819800FC668E /* Main.storyboard */; };
+		2922F0941D8E3DB40005C027 /* SortAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922F0931D8E3DB40005C027 /* SortAnimate.swift */; };
+		2922F0981D8EB2F00005C027 /* PositionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922F0971D8EB2F00005C027 /* PositionOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		290DE0A11D87819800FC668E /* SortComparison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortComparison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290DE0A41D87819800FC668E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290DE0A61D87819800FC668E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		290DE0A81D87819800FC668E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290DE0AB1D87819800FC668E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290DE0AD1D87819800FC668E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2922F0931D8E3DB40005C027 /* SortAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAnimate.swift; sourceTree = "<group>"; };
+		2922F0971D8EB2F00005C027 /* PositionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 			children = (
 				290DE0A41D87819800FC668E /* AppDelegate.swift */,
 				290DE0A61D87819800FC668E /* ViewController.swift */,
-				290DE0A81D87819800FC668E /* Assets.xcassets */,
 				290DE0AA1D87819800FC668E /* Main.storyboard */,
 				290DE0AD1D87819800FC668E /* Info.plist */,
+				2922F0931D8E3DB40005C027 /* SortAnimate.swift */,
+				2922F0971D8EB2F00005C027 /* PositionOperation.swift */,
 			);
 			path = SortComparison;
 			sourceTree = "<group>";
@@ -88,11 +91,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Leif;
 				TargetAttributes = {
 					290DE0A01D87819800FC668E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -119,7 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290DE0A91D87819800FC668E /* Assets.xcassets in Resources */,
 				290DE0AC1D87819800FC668E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,8 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2922F0981D8EB2F00005C027 /* PositionOperation.swift in Sources */,
 				290DE0A71D87819800FC668E /* ViewController.swift in Sources */,
 				290DE0A51D87819800FC668E /* AppDelegate.swift in Sources */,
+				2922F0941D8E3DB40005C027 /* SortAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +169,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -209,8 +216,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -229,6 +238,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -239,8 +249,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SortComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jacky.SortComparison;
+				PRODUCT_BUNDLE_IDENTIFIER = jacky.SortComparisonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -251,8 +262,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SortComparison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jacky.SortComparison;
+				PRODUCT_BUNDLE_IDENTIFIER = jacky.SortComparisonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -275,6 +287,7 @@
 				290DE0B21D87819800FC668E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
